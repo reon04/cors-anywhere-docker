@@ -1,3 +1,6 @@
+# DEPRECATED
+This repo is deprecated in favor of the alternative cors proxy implementation [here](https://github.com/reon04/cors-proxy).
+
 # reon04/cors-anywhere-docker
 [![Publish Docker image](https://github.com/reon04/cors-anywhere-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/reon04/cors-anywhere-docker/actions/workflows/docker-publish.yml)
 
