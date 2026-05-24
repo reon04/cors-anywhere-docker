@@ -1,4 +1,4 @@
-FROM node:15.0-alpine
+FROM node:26.2-alpine
 
 ENV NODE_ENV=production
 ENV NODE_PATH=/usr/local/lib/node_modules
