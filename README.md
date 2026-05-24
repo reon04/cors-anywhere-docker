@@ -1,12 +1,7 @@
-# reon04/cors-anywhere-docker
-[![Publish Docker image](https://github.com/reon04/cors-anywhere-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/reon04/cors-anywhere-docker/actions/workflows/docker-publish.yml)
+# cors-anywhere-docker
+[![Publish Release and Build Docker](https://github.com/reon04/cors-anywhere-docker/actions/workflows/release.yml/badge.svg)](https://github.com/reon04/cors-anywhere-docker/actions/workflows/release.yml)
 
 A docker image for [cors-anywhere](https://github.com/Rob--W/cors-anywhere).
-
-
-### Releases and Deployment
-
-Get the latest release from [Docker Hub](https://hub.docker.com/r/reon04/cors-anywhere-docker).
 
 
 ### Envirionment Variables
