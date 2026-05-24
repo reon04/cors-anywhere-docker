@@ -1,0 +1,24 @@
+name: Merge Dependabot Pullrequest
+on:
+  pull_request:
+    types:
+     - opened
+     - synchronize
+     - reopened
+jobs:
+  automerge:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Merge PR
+        run: |
+          PR_NUMBER=$(echo "${{ github.event.pull_request.number }}")
+          echo "Auto-merging PR #$PR_NUMBER from Dependabot..."
+          gh pr merge "$PR_NUMBER" --merge --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
